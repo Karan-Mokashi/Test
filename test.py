@@ -205,6 +205,7 @@ summary['manual_predicted_clv'] = summary['pred_num_txn'] * summary['exp_avg_rev
 # CLV in terms of profit (profit margin is 5%)
 profit_margin = 0.05
 summary['CLV'] = summary['predicted_clv'] * profit_margin
+st.write(summary)
 
 
 
