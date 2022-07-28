@@ -192,6 +192,8 @@ summary['predicted_clv'] =  ggf.customer_lifetime_value(bgf,
                                                                freq='D',   # frequency in which the data is present(T)      
                                                                discount_rate=0.01) # discount rate
 
+st.write('summary')
+
 # manually calculate
 summary['manual_predicted_clv'] = summary['pred_num_txn'] * summary['exp_avg_revenue']
 
