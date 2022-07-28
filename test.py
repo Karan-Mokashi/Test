@@ -119,6 +119,7 @@ churn = round(1 - Retention_rate, 2)
 Profit_margin = 0.05 
 CLV = round(((Average_revenue * Purchase_freq/churn)) * Profit_margin, 2)
 
+
 #Cohort Analysis
 # Transforming the data to customer level for the analysis
 customer = data.groupby('CustomerID').agg({'InvoiceDate':lambda x: x.min().month, 
