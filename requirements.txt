@@ -15,7 +15,6 @@ brotlipy==0.7.0
 
 certifi==2021.10.8
 
-clyent==1.2.2
 
 comtypes==1.1.10
 conda==4.12.0
