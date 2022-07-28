@@ -13,7 +13,7 @@ import lifetimes
 from datetime import timedelta
 import streamlit as st
 
-st.title('Demand Forecast App')
+st.title('Customer Lifetime Prediction App')
 
 data= pd.read_csv("CLV_Segmentation.csv", parse_dates=['InvoiceDate'], encoding='unicode_escape')
 data= data.drop(['StockCode','Description'], axis=1)
