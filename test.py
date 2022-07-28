@@ -11,7 +11,7 @@ import seaborn as sns
 import warnings
 #import lifetimes
 from datetime import timedelta
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title('Demand Forecast App')
 
 data= pd.read_csv("D:\Compunnel SIP Internship\CLV_Segmentation.csv", parse_dates=['InvoiceDate'], encoding='unicode_escape')
