@@ -181,6 +181,8 @@ summary['exp_avg_revenue'] = ggf.conditional_expected_average_profit(summary['fr
                                        summary['monetary_value'])
 
 
+n_month=int(st.text_input("input CLV Prediction in Month",1))
+
 
 # Predicting Customer Lifetime Value for the next 30 days
 summary['predicted_clv'] =  ggf.customer_lifetime_value(bgf,
@@ -188,7 +190,7 @@ summary['predicted_clv'] =  ggf.customer_lifetime_value(bgf,
                                                                summary['recency'],
                                                                summary['T'],
                                                                summary['monetary_value'],
-                                                               time=1,     # lifetime in months
+                                                               time=n_month,     # lifetime in months
                                                                freq='D',   # frequency in which the data is present(T)      
                                                                discount_rate=0.01) # discount rate
 
