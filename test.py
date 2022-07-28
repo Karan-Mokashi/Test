@@ -208,7 +208,7 @@ summary['manual_predicted_clv'] = summary['pred_num_txn'] * summary['exp_avg_rev
 profit_margin = 0.05
 summary['CLV'] = summary['predicted_clv'] * profit_margin
 st.write(summary)
-st.write(MAE)
+st.write('MAE')
 st.write(mean_absolute_error(summary['manual_predicted_clv'],summary['predicted_clv']))
 
 
