@@ -35,7 +35,8 @@ gitdb==4.0.9
 GitPython==3.1.27
 inflection==0.5.1
 kaleido==0.2.1
-llvmlite==0.37.0
+Lifetimes==0.11.3
+llvmlite==0.38.0
 locket==0.2.1
 lz4==4.0.1
 mccabe==0.6.1
