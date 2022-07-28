@@ -15,7 +15,7 @@ import streamlit as st
 
 st.title('Demand Forecast App')
 
-data= pd.read_csv("D:\Compunnel SIP Internship\CLV_Segmentation.csv", parse_dates=['InvoiceDate'], encoding='unicode_escape')
+data= pd.read_csv("CLV_Segmentation.csv", parse_dates=['InvoiceDate'], encoding='unicode_escape')
 data= data.drop(['StockCode','Description'], axis=1)
 data['Total_Revenue']= data['Quantity'].multiply(data['UnitPrice'])
 data= data.dropna(subset=['CustomerID'],axis=0)
