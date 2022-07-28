@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
-#import lifetimes
+import lifetimes
 from datetime import timedelta
 import streamlit as st
 
