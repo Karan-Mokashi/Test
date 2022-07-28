@@ -12,6 +12,7 @@ import warnings
 import lifetimes
 from datetime import timedelta
 import streamlit as st
+from sklearn.metrics import mean_absolute_error
 
 st.set_page_config(page_title = "Compunnel digital")
 st.image("compunnel.png",width=100)
@@ -207,6 +208,7 @@ summary['manual_predicted_clv'] = summary['pred_num_txn'] * summary['exp_avg_rev
 profit_margin = 0.05
 summary['CLV'] = summary['predicted_clv'] * profit_margin
 st.write(summary)
+st.write(mean_absolute_error(summary['manual_predicted_clv'],summary['predicted_clv']))
 
 
 
