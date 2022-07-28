@@ -11,6 +11,7 @@ import seaborn as sns
 import warnings
 #import lifetimes
 from datetime import timedelta
+import streamlit as st
 
 st.title('Demand Forecast App')
 
