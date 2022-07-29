@@ -89,6 +89,7 @@ scikit-image==0.18.3
 
 
 semver==2.13.0
+seaborn==0.11.2
 
 simplegeneric==0.8.1
 
