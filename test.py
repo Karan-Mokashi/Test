@@ -17,7 +17,7 @@ from sklearn.metrics import mean_absolute_error
 st.set_page_config(page_title = "Compunnel digital")
 st.image("compunnel.png",width=100)
 
-st.title('Customer Lifetime Prediction App')
+st.title('Customer Lifetime Value Prediction App')
 dtype={'CustomerID': int}
 
 data= pd.read_csv("CLV_Segmentation.csv", parse_dates=['InvoiceDate'], encoding='unicode_escape',low_memory=False)
