@@ -214,7 +214,7 @@ st.write(sns.scatterplot(x='manual_predicted_clv',y='predicted_clv',data=summary
 
 
 
-data = data['InvoiceDate'].dt.hour
+data = data['InvoiceDate'].to_datetime.hour
 data['Weekday'] = data['InvoiceDate'].dt.weekday
 #data_uk['WeekdayName'] = data['InvoiceDate'].dt.weekday_name
 data['Month'] = data['InvoiceDate'].dt.month
