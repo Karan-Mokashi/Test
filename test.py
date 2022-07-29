@@ -210,6 +210,8 @@ st.write(summary)
 st.write('MAE')
 st.write(mean_absolute_error(summary['manual_predicted_clv'],summary['predicted_clv']))
 
+st.write(sns.scatterplot(x='manual_predicted_clv',y='predicted_clv',data=summary)
+
 
 
 data['Hour'] = data['InvoiceDate'].dt.hour
